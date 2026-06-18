@@ -3,64 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Гелієві кульки Київ</title>
+<title>Nazar Balloon — гелієві кульки Київ</title>
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#f7f7f7;
-    color:#333;
+    font-family:Arial, sans-serif;
+    color:#ffffff;
+    background-image:url('images/space.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
+
 .hero{
+    max-width:1100px;
+    margin:50px auto 35px;
     background:#ffffff;
+    border-radius:25px;
     padding:40px 20px;
     text-align:center;
+    color:#1f2b6d;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
+
+.logo{
+    max-width:450px;
+    width:90%;
+    margin-bottom:15px;
+}
+
 h1{
     font-size:32px;
-    margin-bottom:10px;
+    margin:10px 0;
 }
+
 .subtitle{
     font-size:18px;
     margin-bottom:30px;
+    color:#666;
 }
+
 .btn{
     display:inline-block;
     padding:15px 25px;
     margin:10px;
+    min-width:220px;
     text-decoration:none;
-    border-radius:8px;
+    border-radius:10px;
     font-weight:bold;
+    color:white;
 }
+
 .instagram{
     background:#E1306C;
-    color:white;
 }
+
 .telegram{
     background:#229ED9;
-    color:white;
 }
+
 .phone{
     background:#28a745;
-    color:white;
 }
+
+.section{
+    background:rgba(0,0,0,0.45);
+    margin:20px auto;
+    padding:30px;
+    border-radius:20px;
+    max-width:1100px;
+    backdrop-filter:blur(5px);
+}
+
+.section h2{
+    text-align:center;
+    font-size:28px;
+    margin-top:0;
+}
+
+.section ul{
+    max-width:600px;
+    margin:0 auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
 .gallery{
+    max-width:1100px;
+    margin:20px auto;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     gap:15px;
     padding:20px;
 }
+
 .gallery img{
-    width:300px;
-    border-radius:10px;
+    width:260px;
+    height:360px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.4);
 }
-.section{
-    background:white;
-    margin:20px;
-    padding:20px;
-    border-radius:10px;
+
+.order{
+    text-align:center;
+}
+
+@media(max-width:600px){
+    .hero{
+        margin:20px 10px;
+        padding:25px 15px;
+    }
+
+    h1{
+        font-size:26px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        margin:10px 0;
+    }
+
+    .section{
+        margin:15px 10px;
+    }
+
+    .gallery img{
+        width:100%;
+        height:auto;
+    }
 }
 </style>
 </head>
@@ -68,6 +150,8 @@ h1{
 <body>
 
 <div class="hero">
+    <img src="images/logo.jpg" class="logo" alt="Nazar Balloon">
+
     <h1>Гелієві кульки з доставкою по Києву</h1>
 
     <p class="subtitle">
@@ -103,21 +187,22 @@ h1{
     </ul>
 </div>
 
-<div class="gallery">
+<div class="section">
+    <h2>Наші роботи</h2>
 
-<img src="images/IMG_0728.JPG">
-
-<img src="images/IMG_0729.JPG">
-
-<img src="images/IMG_0730.JPG">
-
+    <div class="gallery">
+        <img src="images/work1.jpg" alt="Гелієві кульки Київ">
+        <img src="images/work2.jpg" alt="Кульки на день народження">
+        <img src="images/work3.jpg" alt="Святкова композиція з кульок">
+        <img src="images/work4.jpg" alt="Доставка кульок Київ">
+    </div>
 </div>
 
-<div class="section">
+<div class="section order">
     <h2>Замовлення</h2>
 
     <p>
-        Надішліть фото бажаної композиції в Instagram або Telegram,
+        Надішліть фото бажаної композиції, або напишіть Ваші побажання в Instagram або Telegram,
         і ми швидко розрахуємо вартість.
     </p>
 
@@ -125,6 +210,17 @@ h1{
        href="https://www.instagram.com/nazar_balloon/"
        target="_blank">
        Замовити через Instagram
+    </a>
+
+    <a class="btn telegram"
+       href="https://t.me/@Natali_Rotan"
+       target="_blank">
+       Написати в Telegram
+    </a>
+
+    <a class="btn phone"
+       href="tel:+380963511521">
+       Зателефонувати
     </a>
 </div>
 
