@@ -1,228 +1,128 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nazar_Balloon — гелієві кульки Київ</title>
-
-<style>
-*{
-    box-sizing:border-box;
-}
-
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    color:#ffffff;
-    background-image:url('images/IMG_0732.JPG');
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-}
-
-.hero{
-    max-width:1100px;
-    margin:50px auto 35px;
-    background:#ffffff;
-    border-radius:25px;
-    padding:40px 20px;
-    text-align:center;
-    color:#1f2b6d;
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-}
-
-.logo{
-    max-width:450px;
-    width:90%;
-    margin-bottom:15px;
-}
-
-h1{
-    font-size:32px;
-    margin:10px 0;
-}
-
-.subtitle{
-    font-size:18px;
-    margin-bottom:30px;
-    color:#666;
-}
-
-.btn{
-    display:inline-block;
-    padding:15px 25px;
-    margin:10px;
-    min-width:220px;
-    text-decoration:none;
-    border-radius:10px;
-    font-weight:bold;
-    color:white;
-}
-
-.instagram{
-    background:#E1306C;
-}
-
-.telegram{
-    background:#229ED9;
-}
-
-.phone{
-    background:#28a745;
-}
-
-.section{
-    background:rgba(0,0,0,0.45);
-    margin:20px auto;
-    padding:30px;
-    border-radius:20px;
-    max-width:1100px;
-    backdrop-filter:blur(5px);
-}
-
-.section h2{
-    text-align:center;
-    font-size:28px;
-    margin-top:0;
-}
-
-.section ul{
-    max-width:600px;
-    margin:0 auto;
-    font-size:18px;
-    line-height:1.8;
-}
-
-.gallery{
-    max-width:1100px;
-    margin:20px auto;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    padding:20px;
-}
-
-.gallery img{
-    width:260px;
-    height:360px;
-    object-fit:cover;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,.4);
-}
-
-.order{
-    text-align:center;
-}
-
-@media(max-width:600px){
-    .hero{
-        margin:20px 10px;
-        padding:25px 15px;
-    }
-
-    h1{
-        font-size:26px;
-    }
-
-    .subtitle{
-        font-size:16px;
-    }
-
-    .btn{
-        display:block;
-        width:100%;
-        margin:10px 0;
-    }
-
-    .section{
-        margin:15px 10px;
-    }
-
-    .gallery img{
-        width:100%;
-        height:auto;
-    }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nazar_Balloon — доставка гелієвих кульок на Лівому березі Києва</title>
+  <meta name="description" content="Nazar_Balloon — гелієві кульки, святкові набори, цифри, фотозони та доставка повітряних кульок на Лівому березі Києва." />
+  <meta name="keywords" content="гелієві кульки Київ, доставка кульок Лівий берег, повітряні кульки Київ, кульки на день народження, Nazar Balloon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="header">
+    <a class="logo" href="#top">Nazar<span>_Balloon</span></a>
+    <nav class="nav" id="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#sets">Набори</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Відкрити меню">☰</button>
+  </header>
 
-<div class="hero">
-    <img src="images/IMG_0733.JPG" class="logo" alt="Nazar_Balloon">
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="badge">Доставка на Лівому березі Києва</p>
+        <h1>Гелієві кульки для свят, сюрпризів і фотозон</h1>
+        <p>Підберемо набір під подію, підготуємо кульки та доставимо у зручний час.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://www.instagram.com/nazar_balloon/" target="_blank">Instagram</a>
+          <a class="btn secondary" href="#contacts">Замовити</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Святкові гелієві кульки Nazar_Balloon" />
+      </div>
+    </section>
 
-    <h1>Гелієві кульки з доставкою по Києву</h1>
+    <section class="features">
+      <div><b>День у день</b><span>за наявності кульок</span></div>
+      <div><b>Фото перед виїздом</b><span>погоджуємо замовлення</span></div>
+      <div><b>Для будь-якої події</b><span>день народження, виписка, кохання</span></div>
+      <div><b>Лівий берег</b><span>швидка локальна доставка</span></div>
+    </section>
 
-    <p class="subtitle">
-        Сюрприз для дружини, коханої або дитини.
-        Доставка в день замовлення.
-    </p>
+    <section class="section" id="catalog">
+      <div class="section-title">
+        <p>Популярні категорії</p>
+        <h2>Оберіть формат свята</h2>
+      </div>
+      <div class="category-grid">
+        <article class="category-card"><img src="images/category01.jpg" alt="Кульки під стелю"><h3>Кульки під стелю</h3></article>
+        <article class="category-card"><img src="images/category02.jpg" alt="Цифри з кульками"><h3>Цифри</h3></article>
+        <article class="category-card"><img src="images/category03.jpg" alt="Набори для дівчинки"><h3>Для дівчинки</h3></article>
+        <article class="category-card"><img src="images/category04.jpg" alt="Набори для хлопчика"><h3>Для хлопчика</h3></article>
+        <article class="category-card"><img src="images/category05.jpg" alt="Серця та романтичні кульки"><h3>Серця</h3></article>
+        <article class="category-card"><img src="images/category06.jpg" alt="Кульки на виписку"><h3>Виписка</h3></article>
+      </div>
+    </section>
 
-    <a class="btn instagram"
-       href="https://www.instagram.com/nazar_balloon/"
-       target="_blank">
-       Перейти в Instagram
-    </a>
+    <section class="section light" id="sets">
+      <div class="section-title">
+        <p>Готові ідеї</p>
+        <h2>Святкові набори</h2>
+      </div>
+      <div class="product-grid">
+        <article class="product-card"><img src="images/product01.jpg" alt="Набір гелієвих кульок"><div><h3>Набір «День народження»</h3><p>Цифра + кульки в кольорах свята.</p><span>від 900 грн</span></div></article>
+        <article class="product-card"><img src="images/product02.jpg" alt="Ніжний набір кульок"><div><h3>Ніжний набір</h3><p>Пастельні відтінки для фото та сюрпризу.</p><span>від 750 грн</span></div></article>
+        <article class="product-card"><img src="images/product03.jpg" alt="Кульки сердечка"><div><h3>Love set</h3><p>Серця, фольга та кульки з гелієм.</p><span>від 650 грн</span></div></article>
+        <article class="product-card"><img src="images/product04.jpg" alt="Великий святковий набір"><div><h3>Великий святковий</h3><p>Багато кульок для кімнати, залу або фотозони.</p><span>від 1200 грн</span></div></article>
+      </div>
+    </section>
 
-    <a class="btn telegram"
-       href="https://t.me/@Natali_Rotan"
-       target="_blank">
-       Написати в Telegram
-    </a>
+    <section class="section">
+      <div class="section-title">
+        <p>Фото робіт</p>
+        <h2>Галерея</h2>
+      </div>
+      <div class="gallery">
+        <img src="images/gallery01.jpg" alt="Приклад замовлення кульок">
+        <img src="images/gallery02.jpg" alt="Приклад святкового набору">
+        <img src="images/gallery03.jpg" alt="Кульки для дня народження">
+        <img src="images/gallery04.jpg" alt="Доставка кульок у Києві">
+      </div>
+    </section>
 
-    <a class="btn phone"
-       href="tel:+380963511521">
-       Зателефонувати
-    </a>
-</div>
+    <section class="section two-columns" id="delivery">
+      <div>
+        <p class="badge">Як замовити</p>
+        <h2>Доставка повітряних кульок</h2>
+        <p>Напишіть в Instagram або Telegram, оберіть фото чи ідею набору, вкажіть дату, час і адресу доставки. Ми підтвердимо наявність, ціну та підготуємо замовлення.</p>
+      </div>
+      <div class="steps">
+        <div><b>1</b><span>Вибір набору або фото-приклад</span></div>
+        <div><b>2</b><span>Підтвердження ціни та часу</span></div>
+        <div><b>3</b><span>Підготовка кульок</span></div>
+        <div><b>4</b><span>Доставка на Лівий берег Києва</span></div>
+      </div>
+    </section>
 
-<div class="section">
-    <h2>Наші переваги</h2>
-    <ul>
-        <li>Швидка доставка по Києву</li>
-        <li>Композиції на день народження</li>
-        <li>Індивідуальний дизайн</li>
-        <li>Оплата при отриманні</li>
-    </ul>
-</div>
+    <section class="section light faq">
+      <div class="section-title">
+        <p>Питання</p>
+        <h2>FAQ</h2>
+      </div>
+      <details><summary>За скільки часу краще замовляти?</summary><p>Бажано за 1 день. Якщо кульки є в наявності, можливе замовлення день у день.</p></details>
+      <details><summary>Чи можна зробити набір як на фото?</summary><p>Так, надішліть приклад, і ми підберемо схожі кольори та елементи.</p></details>
+      <details><summary>Куди доставляєте?</summary><p>Основний район доставки — Лівий берег Києва.</p></details>
+    </section>
 
-<div class="section">
-    <h2>Наші роботи</h2>
+    <section class="contacts" id="contacts">
+      <h2>Замовити кульки</h2>
+      <p>Контакти-заглушки можна замінити у файлі index.html.</p>
+      <div class="contact-actions">
+        <a class="btn primary" href="https://www.instagram.com/nazar_balloon/" target="_blank">Instagram</a>
+        <a class="btn telegram" href="#">Telegram</a>
+        <a class="btn phone" href="tel:+380000000000">+38 000 000 00 00</a>
+      </div>
+    </section>
+  </main>
 
-    <div class="gallery">
-        <img src="images/IMG_0728.JPG" alt="Гелієві кульки Київ">
-        <img src="images/IMG_0729.JPG" alt="Кульки на день народження">
-        <img src="images/IMG_0730.JPG" alt="Святкова композиція з кульок">
-        <img src="images/IMG_0735.JPG" alt="Доставка кульок Київ">
-    </div>
-</div>
+  <footer class="footer">
+    <p>© 2026 Nazar_Balloon. Гелієві кульки з доставкою на Лівому березі Києва.</p>
+  </footer>
 
-<div class="section order">
-    <h2>Замовлення</h2>
-
-    <p>
-        Надішліть фото бажаної композиції, або напишіть Ваші побажання в Instagram або Telegram,
-        і ми швидко розрахуємо вартість.
-    </p>
-
-    <a class="btn instagram"
-       href="https://www.instagram.com/nazar_balloon/"
-       target="_blank">
-       Замовити через Instagram
-    </a>
-
-    <a class="btn telegram"
-       href="https://t.me/@Natali_Rotan"
-       target="_blank">
-       Написати в Telegram
-    </a>
-
-    <a class="btn phone"
-       href="tel:+380963511521">
-       Зателефонувати
-    </a>
-</div>
-
+  <script src="script.js"></script>
 </body>
 </html>
